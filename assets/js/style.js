@@ -47,8 +47,8 @@ function runGame(gameType) {
     }else if (gameType === "division") {
         displayDivisionQuestion(num1, num2);
     }else {
-        alert('Unknown game type: ${gameType}');
-        throw 'Unknown game type: ${gameType}. Aborting!';
+        alert(`Unknown game type: ${gameType}`);
+        throw `Unknown game type: ${gameType}. Aborting!`;
     }
 }
 /**
@@ -91,8 +91,8 @@ function calculateCorrectAnswer() {
     }else if(operator === "/") {
         return [operand1 / operand2, "division"];
     }else {
-        alert ('unimplemented operator ${operator}');
-        throw 'unimplemented operator ${operator}.Aborting!';
+        alert (`unimplemented operator ${operator}`);
+        throw `unimplemented operator ${operator}.Aborting!`;
     }
 }
 
